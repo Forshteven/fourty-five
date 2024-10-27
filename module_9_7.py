@@ -25,5 +25,5 @@ def multiple_three(a, b, c):
 result = sum_three(4, 3, 6)
 print(result)
 
-result2 = multiple_three(1,1,7)
+result2 = multiple_three(1, 1, 7)
 print(result2)
