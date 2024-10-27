@@ -1,6 +1,6 @@
-def is_prime(sum_three):
+def is_prime(function):
     def wrapper(*args, **kwargs):
-        result = sum_three(*args, **kwargs)
+        result = function(*args, **kwargs)
         if result % 2 == 0 or result % 3 == 0:
             print('Составное')
 
@@ -18,6 +18,12 @@ def is_prime(sum_three):
 def sum_three(a, b, c):
     return a + b + c
 
+@is_prime
+def multiple_three(a, b, c):
+    return a * b * c
 
-result = sum_three(9, 3, 6)
+result = sum_three(4, 3, 6)
 print(result)
+
+result2 = multiple_three(1,1,7)
+print(result2)
